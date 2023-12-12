@@ -1,0 +1,12 @@
+1.可以連線之電腦安裝好,版本測試均OK才可以進行下一步,否則會感受痛苦
+2.蒐集本地之套件
+pip freeze > D:\requirements.txt 
+3.依序下載安裝檔(路徑自己設定)
+pip download -r D:\requirements.txt -d /path/to/destination/folder
+4.將安裝檔案,移至不能連線的電腦,requirements.txt也需要
+5.安裝套件
+pip install --target=/path/to/destination/folder -r D:\requirements.txt
+pip install --no-index --find-links=/path/to/destination/folder -r D:\requirements.txt
+
+
+
